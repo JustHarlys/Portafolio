@@ -70,5 +70,11 @@ export default [
         logo: null,
         svg: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
         category: "Tools"
+    },
+    {
+        course: "Railway",
+        logo: null,
+        svg: "https://railway.com/brand/logo-dark.svg",
+        category: "Tools"
     }
 ];

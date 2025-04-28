@@ -1,15 +1,19 @@
+import { motion } from "framer-motion";
 
-
-function Skills({course, logo, svg, category}) {
-
-
-
+function Skills({ course, logo, svg, category, index }) {
   return (
-        <div className="skills">
-            {logo === null ? <img src={svg}/> : <i className={logo}></i> }
-            <p>{course}</p>
-        </div>
-  )
+    <motion.section
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.15 }}
+    >
+      <div className="skills">
+        {logo === null ? <img src={svg} alt={course} /> : <i className={logo}></i>}
+        <p>{course}</p>
+      </div>
+    </motion.section>
+  );
 }
 
-export default Skills
+export default Skills;

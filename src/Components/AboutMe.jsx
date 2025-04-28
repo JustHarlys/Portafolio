@@ -3,16 +3,18 @@ import skills from "../data/skills"
 
 function AboutMe() {
 
-    const habilidades = skills.map(skill => {
-      return (<Skills 
-        key={skill}
+  const habilidades = skills.map((skill, index) => {
+    return (
+      <Skills 
+        key={skill.course}
         course={skill.course}
         logo={skill.logo}
         svg={skill.svg}
         category={skill.category}
-        />
+        index={index} // 👈 pasar index aquí
+      />
     )
-    })
+  })
 
     console.log(habilidades)
 
@@ -37,7 +39,11 @@ function AboutMe() {
         </div>
 
         <div className="about-me-skills">
+            <h3>Mis Habilidades</h3>
+
+            <div className="inner-skills">
             {habilidades}
+            </div>
         </div>
     </div>
 
