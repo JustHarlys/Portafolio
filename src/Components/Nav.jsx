@@ -1,3 +1,5 @@
+
+
 function Nav() {
   return (
     <nav className="nav">
@@ -9,12 +11,12 @@ function Nav() {
 
         <ul className="nav-items">
             <li className="nav-item">Home</li>
-            <li className="nav-item">About</li>
-            <li className="nav-item">Projects</li>
-            <li className="nav-item">Contact</li>
+            <a href="#about"><li className="nav-item">About</li> </a>
+            <a href="#education"><li className="nav-item">Education</li> </a>
+            <a href="#projects"><li className="nav-item">Projects</li> </a>
         </ul>
     </nav>
   )
 }
 
-export default Nav
+export default Nav;
