@@ -13,7 +13,7 @@ function Education() {
 
   return (
     <section className="education-section">
-      <h2 className="education-title">Educación</h2>
+      <h1 className="education-title">Educación</h1>
       <div className="timeline">
         {educationData.map((item, index) => (
           <div 

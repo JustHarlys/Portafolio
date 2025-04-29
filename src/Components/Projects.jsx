@@ -3,34 +3,40 @@ import projects from '../data/projects'; // El archivo con los datos de los proy
 
 const Projects = () => {
   return (
-    <div className="projects-container">
+    <section className="projects-section">
+
+      <h1 className='projects-title'>Proyectos</h1>
+
       {projects.map((project, index) => (
-        <motion.div
-          className="project-card"
+        <motion.div 
+          className="project-container" 
           key={index}
-          initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: index * 0.3, duration: 0.8 }}
+          initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <div className="project-image-wrapper">
-            <img className="project-image" src={project.img} alt={project.title} />
+          <div className="project-image">
+            <img src={project.img} alt={project.title} />
           </div>
-          <div className="project-info">
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-concept">{project.concept}</p>
-            <p className="project-description">{project.description}</p>
-            <div className="icons-container">
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="icon-link">
+          <div className="project-details">
+            <h3>{project.title}</h3>
+            <p className="concept">{project.concept}</p>
+            <p className="description">{project.description}</p>
+            <div className="project-links">
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="link-button">
                 <i className="fab fa-github"></i> GitHub
               </a>
-              <a href={project.website} target="_blank" rel="noopener noreferrer" className="icon-link">
-                <i className="fas fa-globe"></i> Website
-              </a>
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="link-button">
+                  <i className="fas fa-globe"></i> Website
+                </a>
+              )}
             </div>
           </div>
         </motion.div>
       ))}
-    </div>
+    </section>
   );
 };
 
