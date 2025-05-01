@@ -14,12 +14,12 @@ function App() {
   return (
     <>
       <Nav />
-      <Hero />
+      <section id='home'><Hero /></section>
       <section id='about'><AboutMe /></section>
       <section id='education'><Education /> </section>
       <section id='projects'><Projects/></section>
       <Sidebar />
-      <ContactForm />
+      <section id='contact'><ContactForm /></section>
     </>
   )
 }
