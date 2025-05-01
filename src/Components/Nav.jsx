@@ -12,7 +12,7 @@ function Nav() {
   return (
     <nav className="nav">
       <div className="logo-cont">
-        <img src={me} alt="Harlys's Image" width={50} style={{ borderRadius: 40 }} />
+        <img src={me} alt="Harlys's Image" className='logo-img'/>
         <h3 className="logo-name">Harlys Almanzar</h3>
       </div>
 

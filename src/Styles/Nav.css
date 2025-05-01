@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.logo-img {
+  width: 50px;
+  border-radius: 40px;
+}
+
 .nav-items {
   display: flex;
   gap: 20px;
@@ -62,6 +67,15 @@
 
 /* En pantallas pequeñas */
 @media (max-width: 768px) {
+
+  .nav {
+    height: 1vh;
+  }
+
+  .logo-cont {
+    font-size: 11px;
+  }
+
   .nav-items {
     display: none; /* Ocultar el menú en pantallas pequeñas */
     flex-direction: column;
@@ -76,6 +90,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease;
+  }
+
+  .logo-img {
+    width: 40px;
   }
 
   /* Mostrar el menú cuando el estado 'open' esté activo */
