@@ -1,0 +1,47 @@
+/* Sidebar */
+
+.sidebar {
+  height: 30%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(242, 240, 240);
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.sidebar > a {
+  color: var(--title);
+  transition: 0.3s ease all;
+  padding: 9px;
+  border-radius: 8px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media (max-height: 768px) {
+
+  .sidebar {
+    width: 40px;
+    height: 25%;
+  }
+
+
+  .sidebar{
+    padding-top: 18px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+
+}

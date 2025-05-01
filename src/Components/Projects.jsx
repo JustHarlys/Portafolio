@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import projects from '../data/projects'; // El archivo con los datos de los proyectos
+import '../Styles/Projects.css'
 
 const Projects = () => {
   return (

@@ -1,0 +1,180 @@
+/* About Me */
+.about-me-section {
+  padding-top: 150px;
+  padding-bottom: 113.28px;
+}
+
+
+.about-me-upper-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
+  margin-bottom: 50px;
+}
+
+.about-me-h1 {
+  text-align: center;
+  font-size: 37.70px;
+  letter-spacing: 3px;
+  color: rgb(17, 17, 17);
+  font-weight: bold;
+}
+
+.about-me-h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 9px;
+  background-color: var(--red);
+  margin: 25px auto 0;
+  border-radius: 40px;
+}
+
+.about-me-upper-div .about-me-p {
+  text-align: center;
+  font-size: 23px;
+  color: var(--text);
+  width: 50%;
+}
+
+.about-me-h3 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+
+.about-me-and-skills .about-me-p {
+  font-size: 1.2rem;
+  width: 100%;
+  color: var(--text);
+  padding-top: 20px;
+}
+
+.about-me-and-skills {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 250px;
+  padding: 20px;
+  max-width: 1200px; /* O el ancho que prefieras */
+  margin: 0 auto;
+}
+
+.about-me-text, .about-me-skills {
+  flex: 0 0 40%; /* Cada uno ocupa la misma cantidad de espacio */
+  padding: 20px; /* Opcional: espacio interno */
+  border-radius: 8px; /* Opcional: esquinas redondeadas */
+}
+
+.about-me-btn {
+  border: none;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.about-me-btn:hover {
+  background-color: darkred;
+}
+
+.important {
+  font-weight: bold;
+}
+
+.skills {
+  display: flex;
+  padding: 8px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--red);
+}
+
+.skills > img {
+  width: 35px;
+}
+
+.skills > i {
+  font-size: 35px;
+  color: white;
+}
+
+.skills > p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.about-me-skills > h3 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+
+.inner-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 40px;
+}
+
+.inner-skills > section {
+  width: 100%; /* <- Asegura que no se desborde */
+}
+
+@media (max-width: 768px) {
+
+  .about-me-h3 {
+    text-align: center;
+  }
+
+  .about-me-and-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-me-upper-div .about-me-p {
+    text-align: center;
+    font-size: 23px;
+    color: var(--text);
+    width: 100%;
+  }
+  
+
+  .about-me-text {
+    overflow: auto;
+  }
+
+
+  .inner-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content; /* O un valor fijo como 90%, 300px, etc. */
+    margin: 0 auto; /* CENTRA horizontalmente */
+    gap: 20px; /* Separación entre elementos */
+  }
+
+  .about-me-skills > h3 {
+    text-align: center;
+  }
+
+  .about-me-p {
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .about-me-text {
+    padding: 0;
+  }
+}
