@@ -29,11 +29,11 @@ function Sidebar() {
         <a href="https://www.instagram.com/justharlyss/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
         <a href="https://wa.link/w7mpxz" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
         <a href="https://github.com/JustHarlys" target="_blank"><i className="fa-brands fa-github"></i></a>
-        <button className="toggle-btn arrow-left" onClick={toggleSidebar}>⮜</button>
+        <button className="toggle-btn arrow-left" onClick={toggleSidebar}><i className="fa-solid fa-arrow-left"></i></button>
       </div>
 
       {!isOpen && (
-        <button className="toggle-btn arrow-right" onClick={toggleSidebar} style={darkToggle ? {color : '#fff'} : {color: '#333'}}>⮞</button>
+        <button className="toggle-btn arrow-right" onClick={toggleSidebar} style={darkToggle ? {color : '#fff'} : {color: '#333'}}><i className="fa-solid fa-arrow-right"></i></button>
       )}
     </div>
   )

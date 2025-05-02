@@ -180,6 +180,11 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .hero-section {
+    height: 99vh;
+  }
+
   .hero-h1 {
     font-size: 22.2px;
   }

@@ -76,7 +76,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .fa-solid {
+  .toggle {
     animation: logo-spin infinite 6s linear;
 }
 }
@@ -131,12 +131,5 @@
 
   .hamburger {
     display: flex;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-
-    .fa-solid {
-        
-    }
   }
 }

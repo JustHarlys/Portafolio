@@ -45,7 +45,7 @@ function Nav() {
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contactame</li></a>
         
         <div className='icon-container'>
-          <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item `} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
+          <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
         </div>
       
       </ul>
