@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion';
 import projects from '../data/projects'; // El archivo con los datos de los proyectos
 import '../Styles/Projects.css'
+import '../App.css'
+import { DarkContext } from '../Context/DarkToggleContext';
+import { useContext } from 'react';
 
 const Projects = () => {
-  return (
-    <section className="projects-section">
 
-      <h1 className='projects-title'>Proyectos</h1>
+  const {darkToggle} = useContext(DarkContext)
+
+  return (
+    <section className="projects-section" style={ darkToggle ? {backgroundColor: 'rgb(40, 43, 51)'} : {backgroundColor: '#fff'}}>
+
+      <h1 className='projects-title' style={darkToggle ? {color: 'white'} : {}}>Proyectos</h1>
 
       {projects.map((project, index) => (
         <motion.div 
@@ -16,14 +22,15 @@ const Projects = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
+
         >
           <div className="project-image">
             <img src={project.img} alt={project.title} />
           </div>
           <div className="project-details">
-            <h3>{project.title}</h3>
+            <h3 style={darkToggle ? {color: 'white'} : {}}>{project.title}</h3>
             <p className="concept">{project.concept}</p>
-            <p className="description">{project.description}</p>
+            <p className="description" style={darkToggle ? {color: 'white'} : {}}>{project.description}</p>
             <div className="project-links">
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="link-button">
                 <i className="fab fa-github"></i> GitHub

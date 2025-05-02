@@ -1,8 +1,13 @@
 import { animate, hover } from "https://cdn.jsdelivr.net/npm/motion@12.9.0/+esm"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import '../Styles/SideBar.css'
+import '../App.css'
+import { DarkContext } from "../Context/DarkToggleContext"
 
 function Sidebar() {
+
+  const {darkToggle} = useContext(DarkContext)
+
   const [isOpen, setIsOpen] = useState(true)
 
   const toggleSidebar = () => {
@@ -28,7 +33,7 @@ function Sidebar() {
       </div>
 
       {!isOpen && (
-        <button className="toggle-btn arrow-right" onClick={toggleSidebar}>⮞</button>
+        <button className="toggle-btn arrow-right" onClick={toggleSidebar} style={darkToggle ? {color : '#fff'} : {color: '#333'}}>⮞</button>
       )}
     </div>
   )

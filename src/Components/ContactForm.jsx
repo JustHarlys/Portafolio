@@ -1,6 +1,13 @@
 import emailjs from 'emailjs-com';
+import '../Styles/Contact.css'
+import '../App.css'
+import { DarkContext } from '../Context/DarkToggleContext';
+import { useContext } from 'react';
 
 function ContactForm() {
+
+  const {darkToggle} = useContext(DarkContext)
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -13,7 +20,7 @@ function ContactForm() {
 
   return (
     <section id="contact" className="contact-section">
-      <h2 className="contact-title">Contáctame</h2>
+      <h2 className="contact-title" style={darkToggle ? {color: 'white'} : {}}>Contáctame</h2>
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="text" name="from_name" placeholder="Tu nombre" required />
         <input type="email" name="from_email" placeholder="Tu correo" required />

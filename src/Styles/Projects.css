@@ -1,3 +1,9 @@
+:root {
+  --red: rgb(145, 36, 36);
+  --text: rgb(85, 85, 85);
+  --title: rgb(17, 17, 17);
+}
+
 /* Projects */
 /* Estructura del contenedor de proyectos */
 .projects-section {
@@ -8,6 +14,11 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  transition: 0.5s ease all;
+}
+
+#projects {
+  transition: 0.5s ease all;
 }
 
 

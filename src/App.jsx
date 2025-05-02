@@ -7,14 +7,29 @@ import Projects from './Components/Projects.jsx'
 import Sidebar from './Components/Sidebar.jsx'
 import ContactForm from './Components/ContactForm.jsx'
 import DarkToggleProvider from './Context/DarkToggleContext.jsx'
+import { useContext, useEffect } from 'react'
+import { DarkContext } from './Context/DarkToggleContext.jsx'
 
 
 
 
 function App() {
+  
+  const {darkToggle} = useContext(DarkContext)
+
+  const body = document.body
+
+  useEffect(() => {
+
+    if (darkToggle === true) {
+      body.style.backgroundColor = "#282c34"
+    } else {
+      body.style.backgroundColor = "#fff"
+    }
+  }, [darkToggle])
 
   return (
-    <DarkToggleProvider>
+    <>
       <Nav />
       <section id='home'><Hero /></section>
       <section id='about'><AboutMe /></section>
@@ -22,7 +37,7 @@ function App() {
       <section id='projects'><Projects/></section>
       <Sidebar />
       <section id='contact'><ContactForm /></section>
-    </DarkToggleProvider>
+    </>
   )
 }
 

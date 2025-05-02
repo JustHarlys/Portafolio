@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import '../App.css'
 
 function Skills({ course, logo, svg, category, index }) {
   return (

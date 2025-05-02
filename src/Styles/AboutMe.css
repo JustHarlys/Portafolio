@@ -1,7 +1,14 @@
+:root {
+  --red: rgb(145, 36, 36);
+  --text: rgb(85, 85, 85);
+  --title: rgb(17, 17, 17);
+}
+
 /* About Me */
 .about-me-section {
   padding-top: 150px;
   padding-bottom: 113.28px;
+  transition: 0.5s ease all;
 }
 
 

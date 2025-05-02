@@ -1,3 +1,9 @@
+:root {
+  --red: rgb(145, 36, 36);
+  --text: rgb(85, 85, 85);
+  --title: rgb(17, 17, 17);
+}
+
 /* Container para posicionar ambos elementos */
 .sidebar-container {
   position: relative;
@@ -58,7 +64,6 @@
   background: none;
   border: none;
   font-size: 22px;
-  color: #333;
   padding: 8px 5px;
   cursor: pointer;
   z-index: 999;
