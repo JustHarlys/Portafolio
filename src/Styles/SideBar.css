@@ -1,47 +1,81 @@
-/* Sidebar */
-
-.sidebar {
-  height: 30%;
-  width: 60px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(242, 240, 240);
-  overflow-x: hidden;
-  padding-top: 20px;
-  margin-top: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  border-radius: 0px 50px 50px 0px;
+/* Container para posicionar ambos elementos */
+.sidebar-container {
+  position: relative;
+  z-index: 1000;
 }
 
+/* Sidebar visible */
+.sidebar {
+  width: 60px;
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(0);
+  border-radius: 0 16px 16px 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 30px;
+  transition: transform 0.4s ease;
+}
+
+.sidebar.closed {
+  transform: translateY(-50%) translateX(-100%);
+}
+
+/* Íconos */
 .sidebar > a {
-  color: var(--title);
+  color: var(--title, #333);
   transition: 0.3s ease all;
   padding: 9px;
   border-radius: 8px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media (max-height: 768px) {
+/* Botón de cerrar (flecha izquierda) */
+.toggle-btn.arrow-left {
+  margin-top: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.3s ease;
+}
 
+.toggle-btn.arrow-left:hover {
+  transform: scale(1.2);
+}
+
+/* Botón de abrir (flecha derecha) */
+.toggle-btn.arrow-right {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #333;
+  padding: 8px 5px;
+  cursor: pointer;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn.arrow-right:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+/* Responsive: menor tamaño de fuente en pantallas más pequeñas */
+@media (max-height: 768px) {
   .sidebar {
     width: 40px;
-    height: 25%;
-  }
-
-
-  .sidebar{
-    padding-top: 18px;
   }
 
   .sidebar a {
-    font-size: 18px;
+    font-size: 20px;
   }
-
-
 }

@@ -12,7 +12,7 @@ function Hero() {
             </div>
 
             <div className="hero-btn">
-                <a href="#projects" className="btn">Projects</a>
+                <a href="#projects" className="btn">Proyectos</a>
             </div>
         </div>
 

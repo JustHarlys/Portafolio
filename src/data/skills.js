@@ -1,3 +1,6 @@
+import mongo from '../assets/mongo.svg'
+import postman from '../assets/postman.svg'
+
 export default [
     {
         course: "HTML",
@@ -44,7 +47,7 @@ export default [
     {
         course: "C Sharp",
         logo: null,
-        svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+        svg: "https://img.icons8.com/ios-filled/50/c-sharp-logo.png",
         category: "Programming Language",
     },
     {
@@ -56,13 +59,13 @@ export default [
     {
         course: "MongoDB",
         logo: null,
-        svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        svg: mongo,
         category: "Database",
     },
     {
         course: "Postman",
         logo: null,
-        svg: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+        svg: postman,
         category: "Tools",
     },
     {

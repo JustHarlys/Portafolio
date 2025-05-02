@@ -75,6 +75,7 @@
   border: none;
   cursor: pointer;
   transition: 0.5s ease all;
+  margin-top: 25px;
 }
 
 .about-me-btn:hover {
@@ -94,14 +95,18 @@
   background-color: var(--red);
 }
 
-.skills > img {
+.skills > img{
   width: 35px;
+  fill: white;
+  filter: invert(98%) sepia(8%) saturate(150%) hue-rotate(175deg) brightness(122%) contrast(100%);
 }
+
 
 .skills > i {
   font-size: 35px;
   color: white;
 }
+
 
 .skills > p {
   text-transform: uppercase;
@@ -168,6 +173,10 @@
   .btn {
     display: block;
     margin: auto;
+  }
+
+  .about-me-text > a {
+    text-decoration: none;
   }
 
   .hidden {

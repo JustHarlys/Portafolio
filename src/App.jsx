@@ -6,13 +6,15 @@ import Education from './Components/Education.jsx'
 import Projects from './Components/Projects.jsx'
 import Sidebar from './Components/Sidebar.jsx'
 import ContactForm from './Components/ContactForm.jsx'
+import DarkToggleProvider from './Context/DarkToggleContext.jsx'
+
 
 
 
 function App() {
 
   return (
-    <>
+    <DarkToggleProvider>
       <Nav />
       <section id='home'><Hero /></section>
       <section id='about'><AboutMe /></section>
@@ -20,7 +22,7 @@ function App() {
       <section id='projects'><Projects/></section>
       <Sidebar />
       <section id='contact'><ContactForm /></section>
-    </>
+    </DarkToggleProvider>
   )
 }
 

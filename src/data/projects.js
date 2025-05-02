@@ -1,8 +1,6 @@
 import letItOutImg from '/src/assets/let-it-out.png';
-import harlysLinksImg from '/src/assets/harlys-links.png';
 import weightTrackerImg from '/src/assets/weight-tracker.png';
 import personalBlog from '/src/assets/personal-blog.png'
-import todoList from '/src/assets/Todo.2.png'
 import apod from '/src/assets/apod.png'
 import bakeryTemplate from '/src/assets/bakery-template.png'
 import mlbSimulator from '/src/assets/mlb-simulator.png'
@@ -46,15 +44,6 @@ export default [
         description: "Página que muestra la foto astronomica del día elegida por la nasa, utilizando su API y haciendo un llamado a la misma, desarrollado en React y desplegado en vercel."
     },
     {
-        title : "Harlys Links",
-        link : "https://harlys-links.vercel.app/",
-        linkRes : "https://harlys-links.vercel.app/",
-        concept : "Una página que contiene todos mis links",
-        img : harlysLinksImg,
-        github : "https://github.com/JustHarlys/Instagram-Link",
-        description : 'Página desarrollada en JavaScript utilizando el framework de React.js, redirige a todos los links que son de mi propiedad y a este portafolio'
-    },
-    {
         title: "Weight Tracker",
         link : "",
         linkRes : "",
@@ -62,15 +51,6 @@ export default [
         img: weightTrackerImg,
         github : "https://github.com/JustHarlys/Weight-Tracker",
         description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos en una base de datos creada en SQL Server'
-    },
-    {
-        title: "To do list",
-        link: "https://harlys-todo.vercel.app/",
-        linkRes: "https://harlys-todo.vercel.app/",
-        concept: "To do list básico",
-        img: todoList,
-        github: "https://github.com/JustHarlys/Todo",
-        description: "Página realizada para un Todo list bastante básico, permite agregar los items que uno quiera y necesite con un diseño fácil de entender, no requiere de base de datos ya que es demostración, al seleccionar un item te da la opción de eliminarlo, hecho en React.js, desplegado en Vercel"
     },
     {
         title : "Let it Out (Despliegue de base de datos caducado)",

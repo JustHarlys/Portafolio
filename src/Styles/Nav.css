@@ -1,3 +1,13 @@
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* Menú y barra de navegación */
 .nav {
   display: flex;
@@ -24,7 +34,9 @@
 .nav-items {
   display: flex;
   gap: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 
 .nav-items > a {
   text-decoration: none;
@@ -46,6 +58,16 @@
   cursor: pointer;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+
+  .fa-solid {
+    font-size: 1.4rem;
+    animation: rotating infinite 6s linear;
+    transform-origin: center center;
+    display: inline-block;
+  }
+}
+
 .nav-item:hover {
   color: var(--red);
 }
@@ -65,19 +87,13 @@
   border-radius: 5px;
 }
 
-/* En pantallas pequeñas */
 @media (max-width: 768px) {
 
   .nav {
-    height: 1vh;
-  }
-
-  .logo-cont {
-    font-size: 11px;
+    padding: 15px;
   }
 
   .nav-items {
-    display: none; /* Ocultar el menú en pantallas pequeñas */
     flex-direction: column;
     gap: 10px;
     position: absolute;
@@ -89,21 +105,19 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
   }
 
-  .logo-img {
-    width: 40px;
-  }
-
-  /* Mostrar el menú cuando el estado 'open' esté activo */
   .nav-items.open {
-    display: flex; /* Mostrar el menú */
     transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  /* Mostrar el botón hamburguesa en pantallas pequeñas */
   .hamburger {
     display: flex;
   }
 }
+
