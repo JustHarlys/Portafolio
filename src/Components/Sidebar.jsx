@@ -8,7 +8,7 @@ function Sidebar() {
 
   const {darkToggle} = useContext(DarkContext)
 
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleSidebar = () => {
     setIsOpen(prev => !prev)
