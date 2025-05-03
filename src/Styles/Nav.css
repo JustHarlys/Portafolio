@@ -120,7 +120,11 @@
     transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .nav-items.open-black {
+    background-color: #282c34;
   }
 
   .nav-items.open {
