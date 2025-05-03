@@ -164,7 +164,8 @@
   .inner-skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: fit-content; /* O un valor fijo como 90%, 300px, etc. */
+    width: 100%;
+    max-width: 100%; /* O un valor fijo como 90%, 300px, etc. */
     margin: 0 auto; /* CENTRA horizontalmente */
     gap: 20px; /* Separación entre elementos */
   }
