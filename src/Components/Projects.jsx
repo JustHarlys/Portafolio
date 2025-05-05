@@ -10,7 +10,7 @@ const Projects = () => {
   const {darkToggle} = useContext(DarkContext)
 
   return (
-    <section className="projects-section" style={ darkToggle ? {backgroundColor: 'rgb(40, 43, 51)'} : {backgroundColor: '#fff'}}>
+    <section className="projects-section" style={ darkToggle ? {backgroundColor: '#282c34'} : {backgroundColor: '#fff'}}>
 
       <h1 className='projects-title' style={darkToggle ? {color: 'white'} : {}}>Proyectos</h1>
 
