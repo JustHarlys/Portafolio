@@ -29,7 +29,7 @@ export default [
         title: "Accounting Template",
         link: "https://accounting-template.vercel.app/",
         linkRes: "https://accounting-template.vercel.app/",
-        concept: "Simulador de un juego de baseball",
+        concept: "Template de una firma de contadores",
         img: accountingTemplate,
         github: "https://github.com/JustHarlys/Accounting-Template",
         description: "Plantilla de sitio web orientada a una firma contadora, con diseño moderno. Construida con React.js y desplegada en Vercel."

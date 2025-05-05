@@ -4,7 +4,6 @@
   --title: rgb(17, 17, 17);
 }
 
-/* Container para posicionar ambos elementos */
 .sidebar-container {
   position: relative;
   z-index: 1000;
@@ -22,9 +21,6 @@
   cursor: pointer;
 }
 
-.arrow:hover {
-  
-}
 
 .right {
   transform: rotate(-45deg);
@@ -36,7 +32,6 @@
   -webkit-transform: rotate(135deg);
 }
 
-/* Sidebar visible */
 .sidebar {
   width: 60px;
   background-color: #f2f2f2;

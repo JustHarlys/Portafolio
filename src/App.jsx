@@ -6,7 +6,6 @@ import Education from './Components/Education.jsx'
 import Projects from './Components/Projects.jsx'
 import Sidebar from './Components/Sidebar.jsx'
 import ContactForm from './Components/ContactForm.jsx'
-import DarkToggleProvider from './Context/DarkToggleContext.jsx'
 import { useContext, useEffect } from 'react'
 import { DarkContext } from './Context/DarkToggleContext.jsx'
 
