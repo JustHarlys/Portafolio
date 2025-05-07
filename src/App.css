@@ -51,4 +51,7 @@ body {
   width: 100%;
 }
 
+.typewriter-text {
+  border-right: 1px solid black;
+}
 
