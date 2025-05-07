@@ -1,10 +1,10 @@
-import letItOutImg from '/src/assets/let-it-out.png';
-import weightTrackerImg from '/src/assets/weight-tracker.png';
-import personalBlog from '/src/assets/personal-blog.png'
-import apod from '/src/assets/apod.png'
-import bakeryTemplate from '/src/assets/bakery-template.png'
-import mlbSimulator from '/src/assets/mlb-simulator.png'
-import accountingTemplate from '/src/assets/accounting.png'
+import letItOutImg from '/src/assets/let-it-out.webp';
+import weightTrackerImg from '/src/assets/weight-tracker.webp';
+import personalBlog from '/src/assets/personal-blog.webp'
+import apod from '/src/assets/apod.webp'
+import bakeryTemplate from '/src/assets/bakery-template.webp'
+import mlbSimulator from '/src/assets/mlb-simulator.webp'
+import accountingTemplate from '/src/assets/accounting.webp'
 
 export default [
     {
