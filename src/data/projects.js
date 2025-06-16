@@ -17,6 +17,16 @@ export default [
         description: "Simulación de un juego de MLB mediante el llamado de la API de BallDontLie, cuenta con control de carreras y outs, extra-innings y walk offs, desarrollado en React.js y desplegado en vercel."
     },
     {
+        title: "Planificación para pagos UNAPEC",
+        link: "https://pagos-unapec.vercel.app/",
+        linkRes: "https://pagos-unapec.vercel.app/",
+        concept: "Planificación de pagos para estudiantes de UNAPEC",
+        img: mlbSimulator,
+        github: "https://github.com/JustHarlys/Pagos-Unapec",
+        description: "Plataforma creada para que los estudiantes de la Universidad APEC puedan pre-planificar cuánto les va a costar la colegiatura pre-seleccionada, ya que la universidad no proporciona una vía que permita hacerlo, desarrollada en JavaScript con la librería de React y desplegada en Vercel"
+
+    },
+    {
         title: "Bakery Template",
         link: "https://bakery-template-plum.vercel.app/",
         linkRes: "https://bakery-template-plum.vercel.app/",
