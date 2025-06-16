@@ -5,6 +5,7 @@ import apod from '/src/assets/apod.webp'
 import bakeryTemplate from '/src/assets/bakery-template.webp'
 import mlbSimulator from '/src/assets/mlb-simulator.webp'
 import accountingTemplate from '/src/assets/accounting.webp'
+import pagosUnapec from '/src/assets/Pagos UNAPEC.png'
 
 export default [
     {
@@ -21,7 +22,7 @@ export default [
         link: "https://pagos-unapec.vercel.app/",
         linkRes: "https://pagos-unapec.vercel.app/",
         concept: "Planificación de pagos para estudiantes de UNAPEC",
-        img: mlbSimulator,
+        img: pagosUnapec,
         github: "https://github.com/JustHarlys/Pagos-Unapec",
         description: "Plataforma creada para que los estudiantes de la Universidad APEC puedan pre-planificar cuánto les va a costar la colegiatura pre-seleccionada, ya que la universidad no proporciona una vía que permita hacerlo, desarrollada en JavaScript con la librería de React y desplegada en Vercel"
 
