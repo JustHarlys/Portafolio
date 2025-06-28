@@ -9,7 +9,6 @@ function Nav() {
 
   
   const {handleToggle, darkToggle} = useContext(DarkContext)
-  console.log(darkToggle, handleToggle)
 
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef();
