@@ -28,7 +28,6 @@ function AboutMe() {
 
     <div className="about-me-upper-div">
         <h1 className="about-me-h1" style={darkToggle ? {color: 'white'} : {}}>SOBRE MI</h1>
-        <p className="about-me-p" style={darkToggle ? {color: 'white'} : {}}>Aquí encontrarás más información sobre mi, sobre lo que hago, mis hábilidades técnicas y herramientas que manejo.</p>
     </div>
 
 

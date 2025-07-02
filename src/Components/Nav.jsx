@@ -46,7 +46,7 @@ function Nav() {
         <div className='icon-container'>
           <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
         </div>
-      
+       
       </ul>
 
       {/* Icono de hamburguesa */}
