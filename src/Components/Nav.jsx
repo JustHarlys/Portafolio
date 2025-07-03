@@ -42,11 +42,13 @@ function Nav() {
         <a href="#education" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Educación</li></a>
         <a href="#projects" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Proyectos</li></a>
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contactame</li></a>
-        
+
         <div className='icon-container'>
           <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
         </div>
        
+        <BtnSwitch />
+
       </ul>
 
       {/* Icono de hamburguesa */}
