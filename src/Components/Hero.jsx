@@ -1,7 +1,7 @@
 import '../Styles/Hero.css'
 import '../App.css'
 import { DarkContext } from '../Context/DarkToggleContext'
-import { useContext, useRef } from 'react'
+import { useContext} from 'react'
 import {gsap} from 'gsap'
 import { useGSAP } from '@gsap/react'
 

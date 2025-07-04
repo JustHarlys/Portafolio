@@ -83,6 +83,7 @@
   cursor: pointer;
   transition: 0.5s ease all;
   margin-top: 25px;
+  font-size: 16px;
 }
 
 .about-me-btn:hover {
