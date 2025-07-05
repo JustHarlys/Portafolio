@@ -47,10 +47,18 @@ body {
   color: #333;
   font-family: sans-serif;
   line-height: 1.5;
-  transition: 0.5s ease all;
   width: 100%;
 }
 
-.typewriter-text {
-  border-right: 1px solid black;
+
+#projects {
+  transition: 0.5s ease all;
+}
+
+#about { 
+  transition: 0.5s ease all;
+}
+
+#contact {
+  transition: 0.5s ease all;
 }

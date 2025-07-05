@@ -10,32 +10,24 @@ import { useContext, useEffect } from 'react'
 import { DarkContext } from './Context/DarkToggleContext.jsx'
 
 
-
-
 function App() {
-  
   const {darkToggle} = useContext(DarkContext)
-
   const body = document.body
 
   useEffect(() => {
 
-    if (darkToggle === true) {
-      body.style.backgroundColor = "#282c34"
-    } else {
-      body.style.backgroundColor = "#fff"
-    }
+    const theme = localStorage.getItem("darkToggle")
   }, [darkToggle])
 
   return (
     <>
       <Nav />
       <section id='home'><Hero /></section>
-      <section id='about'><AboutMe /></section>
+      <section id='about' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><AboutMe /></section>
       <section id='education'><Education /> </section>
-      <section id='projects'><Projects/></section>
+      <section id='projects' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><Projects/></section>
       <Sidebar />
-      <section id='contact'><ContactForm /></section>
+      <section id='contact' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><ContactForm /></section>
     </>
   )
 }
