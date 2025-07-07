@@ -6,7 +6,6 @@ import {gsap} from 'gsap'
 import { useGSAP } from '@gsap/react'
 
 
-
 function Hero() {
   const { darkToggle } = useContext(DarkContext)
 
@@ -40,9 +39,6 @@ function Hero() {
       ease: "power.inOut"
     })
   })
-
-
-
 
   return (
     <section className={`hero-section ${darkToggle ? 'hero-black' : ''}`}>

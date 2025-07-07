@@ -51,9 +51,9 @@ function Nav() {
 
       {/* Icono de hamburguesa */}
       <div className="hamburger" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+        <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
+        <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
+        <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
       </div>
     </nav>
   );
