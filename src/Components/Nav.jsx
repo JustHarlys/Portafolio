@@ -9,6 +9,7 @@ function Nav() {
 
   
   const {handleToggle, darkToggle} = useContext(DarkContext)
+  const [ mode, setMode ] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef();
@@ -16,6 +17,11 @@ function Nav() {
   const toggleMenu = () => {
     setIsOpen(prev => !prev);
   };
+
+  const toggleMode = () => {
+    setMode(prevMode => !prevMode);
+    console.log(mode);
+  }
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -42,7 +48,7 @@ function Nav() {
         <a href="#education" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Educación</li></a>
         <a href="#projects" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Proyectos</li></a>
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contactame</li></a>
-
+        <button onClick={toggleMode } className={mode ? 'freelance btn' : 'btn'}>{mode ? 'Freelance' : 'Dev'}</button>
         <div className='icon-container'>
           <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
         </div>
