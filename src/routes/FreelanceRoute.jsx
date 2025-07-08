@@ -1,7 +1,11 @@
-import Nav from "../Components/Nav"
+import HeroF from "../ComponentsFreelance/HeroF"
+import NavF from "../ComponentsFreelance/NavF"
 
 export const FreelanceRoute = () => {
   return (
-    <Nav />
+    <>
+      <NavF />
+      <HeroF />
+    </>
   )
 }

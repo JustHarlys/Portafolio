@@ -10,7 +10,7 @@ export const PortfolioRoutes = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        navigate(mode ? '/dev' : '/freelance');
+        navigate(mode ? '/freelance' : '/dev');
     }, [mode, navigate])
 
   return (

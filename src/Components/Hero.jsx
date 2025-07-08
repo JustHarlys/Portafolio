@@ -45,7 +45,7 @@ function Hero() {
 
 
       <div className="hero-content">
-        <h1 className="hero-h1" style={darkToggle ? {color: 'white'} : {color: 'black'}}>Hola, soy Harlys Almanzar</h1>
+        <h1 className="hero-h1" style={{color: darkToggle ? 'white' : 'black'}}>Hola, soy Harlys Almanzar</h1>
 
         <div className="hero-text">
           <p className="hero-p" style={darkToggle ? {color: 'white'} : {}}>Transformo ideas en experiencias digitales sólidas, diseñando y desarrollando sitios web que aportan valor real al crecimiento de cada proyecto.</p>

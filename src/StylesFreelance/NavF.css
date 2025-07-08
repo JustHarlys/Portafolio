@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.logo-img {
+.logo-img-freelance {
   width: 50px;
   border-radius: 40px;
 }
@@ -128,6 +128,7 @@
   .nav {
     padding: 15px;
   }
+
   .nav-items {
     flex-direction: column;
     gap: 10px;
@@ -159,4 +160,5 @@
   .hamburger {
     display: flex;
   }
+
 }

@@ -13,7 +13,9 @@ function DevRoute() {
   const {darkToggle} = useContext(DarkContext)
 
   useEffect(() => {
-    const theme = localStorage.getItem("darkToggle")
+
+    localStorage.getItem("darkToggle")
+    
   }, [darkToggle])
 
   return (
