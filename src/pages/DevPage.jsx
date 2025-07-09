@@ -9,7 +9,7 @@ import { useContext, useEffect } from 'react'
 import { DarkContext } from '../Context/DarkToggleContext.jsx'
 
 
-function DevRoute() {
+function DevPage() {
   const {darkToggle} = useContext(DarkContext)
 
   useEffect(() => {
@@ -31,4 +31,4 @@ function DevRoute() {
   )
 }
 
-export default DevRoute;
+export default DevPage;

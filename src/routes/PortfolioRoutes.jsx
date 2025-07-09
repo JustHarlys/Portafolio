@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom"
-import DevRoute from "./DevRoute"
+import DevPage from "../pages/DevPage"
 import { useContext, useEffect } from "react"
 import { RouteContext } from "../Context/RouteContext"
-import { FreelanceRoute } from "./FreelanceRoute"
+import { FreelancerPage } from "../pages/FreelancerPage"
 
 export const PortfolioRoutes = () => {
 
@@ -15,8 +15,8 @@ export const PortfolioRoutes = () => {
 
   return (
     <Routes>
-    <Route path="/dev" element={<DevRoute />} />
-    <Route path="/freelance" element={<FreelanceRoute />} />
+    <Route path="/dev" element={<DevPage />} />
+    <Route path="/freelance" element={<FreelancerPage />} />
     <Route
         path="/"
         element={<Navigate to="/dev" />}
