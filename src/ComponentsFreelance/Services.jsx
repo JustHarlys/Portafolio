@@ -22,8 +22,8 @@ export const Services = () => {
     const { darkToggle } = useContext(DarkContext)
 
   return (
-    <section className="services-section" style={{ backgroundColor: darkToggle ? 'rgb(40, 43, 51)' : '#fcfcfc' }}>
-      <h1 className="services-title" style={{ color: darkToggle ? 'white'  : 'black'}}>SERVICIOS</h1>
+    <section className="services-section" style={{ backgroundColor: darkToggle ? 'rgb(38, 42, 51)' : '#fcfcfc' }}>
+      <h1 className="services-title" style={{ color: darkToggle ? 'white'  : '#282c34'}}>SERVICIOS</h1>
       <div className="services-grid">
         {services.map((item, index) => (
           <SpotlightCard
@@ -33,7 +33,7 @@ export const Services = () => {
           >
             <div className="card-content" >
               <div className="icon-container" >
-                <div className="icon" >
+                <div className="icon" style={{ color: "rgb(57, 57, 168)"}}>
                   {item.icon}
                 </div>
               </div>

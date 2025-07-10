@@ -2,6 +2,7 @@
   --red: rgb(145, 36, 36);
   --text: rgb(85, 85, 85);
   --title: rgb(17, 17, 17);
+  --blue: rgb(57, 57, 168);
 }
 
 /* Menú y barra de navegación */
@@ -45,7 +46,7 @@
   color: var(--red);
 }
 
-.nav-item {
+.nav-item-f {
   list-style-type: none;
   padding: 10px;
   font-size: 19px;
@@ -63,7 +64,7 @@
   transition: 0.5s ease all;
 }
 
-.icon-container {
+.icon-container-freelance {
   width: 30px;
 }
 
@@ -104,8 +105,8 @@
 }
 }
 
-.nav-item:hover {
-  color: var(--red);
+.nav-item-f:hover {
+  color: var(--blue);
 }
 
 /* Menú hamburguesa */

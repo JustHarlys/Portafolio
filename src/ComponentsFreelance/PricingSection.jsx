@@ -1,10 +1,15 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import FirstPlan from "./Plans/FirstPlan";
 import SecondPlan from "./Plans/SecondPlan";
 import { gsap } from "gsap";
 import '../StylesFreelance/PricingSlider.css';
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { DarkContext } from "../Context/DarkToggleContext";
 
 export const PricingSection = () => {
+
+  const { darkToggle } = useContext(DarkContext)
+
   const [activeSlide, setActiveSlide] = useState(0);
   const containerRef = useRef();
 
@@ -36,10 +41,16 @@ export const PricingSection = () => {
   };
 
   return (
-    <section className="slider-wrapper">
-      <div className="slider-navigation">
-        <button onClick={() => handleSlideChange("prev")}>&larr;</button>
-        <button onClick={() => handleSlideChange("next")}>&rarr;</button>
+
+    <section className="slider-wrapper" style={{ backgroundColor: darkToggle ? '#282c34' : 'white',}}>
+        <h1 className="slider-heading" style={{ color: darkToggle ? 'white' : '#282c34',}}>Nuestros Planes</h1>
+
+
+      <div className="slider-navigation" >
+        <button onClick={() => handleSlideChange("prev")} className={`btn-f ${darkToggle ? 'dark' : 'light'}` } 
+        > <AiOutlineLeft /> </button>
+        <button onClick={() => handleSlideChange("next")} className={`btn-f ${darkToggle ? 'dark' : 'light'}` }  
+        > <AiOutlineRight /> </button>
       </div>
 
       <div className="slider-viewport">
@@ -48,5 +59,6 @@ export const PricingSection = () => {
         </div>
       </div>
     </section>
+    
   );
 };

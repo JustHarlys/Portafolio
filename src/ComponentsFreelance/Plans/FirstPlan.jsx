@@ -1,7 +1,9 @@
 import './FirstPlan.css';
 import { FaCheck } from "react-icons/fa";
 import AdditionalCostsModal from './AdditionalCostsModal';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { DarkContext } from '../../Context/DarkToggleContext';
+
 
 const features = [
   "Lorem ipsum dolor sit amet.",
@@ -13,11 +15,14 @@ const features = [
 ];
 
 const FirstPlan = () => {
+
+    const { darkToggle } = useContext(DarkContext)
+
   const [showModal, setShowModal] = useState(false);
 
   return (
     <section className="pricing-wrapper">
-      <h4 className="pricing-title">Plan 1</h4>
+      <h4 className="pricing-title" style={{ color: darkToggle ? 'white' : 'black',}}>Plan Fijo</h4>
 
       <div className="pricing-container">
         {/* Plan $150 */}
@@ -29,7 +34,6 @@ const FirstPlan = () => {
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>
-          <button className="select-btn">Elegir</button>
         </div>
 
         {/* Plan $500 (destacado) */}
@@ -41,7 +45,6 @@ const FirstPlan = () => {
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>
-          <button className="select-btn">Elegir</button>
         </div>
 
         {/* Plan $300 */}
@@ -53,7 +56,6 @@ const FirstPlan = () => {
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>
-          <button className="select-btn">Elegir</button>
         </div>
       </div>
 

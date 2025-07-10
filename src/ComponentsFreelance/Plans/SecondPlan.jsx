@@ -1,6 +1,8 @@
 import './FirstPlan.css';
 import './SecondPlan.css';
 import { FaCheck } from "react-icons/fa";
+import { DarkContext } from '../../Context/DarkToggleContext';
+import { useContext } from 'react';
 
 const features = [
   "Lorem ipsum dolor sit amet.",
@@ -30,9 +32,12 @@ const includedItems = [
 ];
 
 const SecondPlan = () => {
+
+  const { darkToggle } = useContext(DarkContext)
+
   return (
     <section className="pricing-wrapper">
-      <h1 className="pricing-title">Plan Mensual</h1>
+      <h1 className="pricing-title" style={{ color: darkToggle ? 'white' : 'black',}}>Plan Mensual</h1>
 
       <div className="pricing-container">
        
@@ -56,7 +61,6 @@ const SecondPlan = () => {
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>
-          <button className="select-btn">Suscribirse</button>
         </div>
 
         {/* Tarjeta de Lo que Incluye */}
