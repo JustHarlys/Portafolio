@@ -1,3 +1,21 @@
 .pricing-container.single {
   justify-content: center;
 }
+
+.extras-card {
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  opacity: 0.95;
+  color: #333;
+}
+
+.extras-card .plan-title {
+  color: #555;
+}
+
+.extras-card .features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+

@@ -44,7 +44,7 @@ function NavF() {
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contactame</li></a>
         <button onClick={ onToggleMode } className={`mode-btn ${mode ? 'freelance ' : 'dev'}`}> {mode ? 'Freelance' : 'Dev'} </button>
 
-        <div className='icon-container'>
+        <div className='icon-container-freelance'>
           <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
         </div>
 

@@ -1,0 +1,44 @@
+.slider-wrapper {
+  position: relative;
+  padding: 4rem;
+  perspective: 1000px;
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+  padding: 100px;
+}
+
+.slider-navigation button {
+  pointer-events: all;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-navigation button:hover {
+  background-color: #555;
+}
+
+.slider-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-content {
+  will-change: transform;
+  transform-style: preserve-3d;
+}

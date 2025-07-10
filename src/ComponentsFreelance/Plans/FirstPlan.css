@@ -1,7 +1,7 @@
 .pricing-wrapper {
-  padding: 4rem 2rem;
-  background-color: #fff;
+  padding: 4rem;
   text-align: center;
+  height: 90vh;
 }
 
 .pricing-title {
@@ -69,4 +69,27 @@
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.extras-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.extras-toggle-btn {
+  width: 320px; 
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.extras-toggle-btn:hover {
+  background-color: #555;
 }
