@@ -10,8 +10,8 @@ export const FreelancerPage = () => {
       <NavF />
       <HeroF />
       <Services />
-      <PricingSection />
       <Portfolio />
+      <PricingSection />
       <Services />
     </>
   )
