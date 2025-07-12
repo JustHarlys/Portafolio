@@ -13,25 +13,24 @@ export const Portfolio = () => {
     const containerRef = useRef(null)
     
     const { darkToggle } = useContext(DarkContext);
-    
-  useGSAP(() => {
-    ScrollTrigger.batch(".gallery-img", {
-      onEnter: batch => {
-        gsap.fromTo(batch,
-          { autoAlpha: 0, y: 50 },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 1,
-            stagger: 0.15,
-            ease: "power2.out"
-          }
-        )
-      },
-      start: "top bottom",
-      once: true
+
+    useGSAP(() => {
+    const images = gsap.utils.toArray(".gallery-img")
+
+    gsap.from(images, {
+        autoAlpha: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.15,
+        ease: "power2.out",
+        scrollTrigger: {
+        trigger: ".gallery",           // 👈 se activa cuando el contenedor entra
+        start: "center bottom",           // 👈 exacto cuando el top de gallery toca el bottom del viewport
+        toggleActions: "play none none none",
+        once: true
+        }
     })
-  }, { scope: containerRef })
+    }, { scope: containerRef })
 
   return (
     <section className='gallery-container' ref={containerRef} style={{ backgroundColor: darkToggle ? '#282c34' : 'white' }}>

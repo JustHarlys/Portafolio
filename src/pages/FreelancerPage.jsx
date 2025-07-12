@@ -1,3 +1,4 @@
+import ContactFormF from "../ComponentsFreelance/ContactFormF"
 import HeroF from "../ComponentsFreelance/HeroF"
 import NavF from "../ComponentsFreelance/NavF"
 import { Portfolio } from "../ComponentsFreelance/Portfolio"
@@ -12,7 +13,7 @@ export const FreelancerPage = () => {
       <Services />
       <Portfolio />
       <PricingSection />
-      <Services />
+      <ContactFormF />
     </>
   )
 }
