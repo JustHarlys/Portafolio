@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   transition: 0.5s ease all;
-  height: 98vh;
+  height: 103vh;
 }
 
 .hero-freelance {
@@ -100,13 +100,12 @@
     justify-content: center;   /* Centra verticalmente */
     align-items: center;       /* Centra horizontalmente */
     text-align: center;
-    height: 100vh;             /* Ocupa el alto total de la pantalla */
+    height: 90vh;             /* Ocupa el alto total de la pantalla */
   }
 
   .hero-content-freelance {
-    margin-bottom: 2rem;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 11rem;
   }
 
   .hero-buttons-freelance {
