@@ -37,3 +37,13 @@
     border-radius: 10px;
     aspect-ratio: 16 / 9;
 }
+
+@media (max-width: 768px) {
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 60px;
+  }
+
+}

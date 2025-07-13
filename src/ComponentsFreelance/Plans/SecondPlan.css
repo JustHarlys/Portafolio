@@ -19,3 +19,40 @@
   list-style: none;
 }
 
+@media (max-width: 768px) {
+  .pricing-wrapper {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .pricing-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .price-card {
+    width: 90%;
+    max-width: 320px;
+    margin-bottom: 2rem;
+  }
+
+  .plan-title {
+    font-size: 1.2rem;
+  }
+
+  .plan-price {
+    font-size: 1.5rem;
+  }
+
+  .features-list {
+    font-size: 0.9rem;
+  }
+}
+

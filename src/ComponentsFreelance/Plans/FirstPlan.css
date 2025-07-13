@@ -84,3 +84,53 @@
 .extras-toggle-btn:hover {
   background-color: #007aff;
 }
+
+@media (max-width: 768px) {
+  .pricing-wrapper {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .pricing-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-card {
+    width: 90%;
+    max-width: 320px;
+    margin-bottom: 2rem;
+  }
+
+  .featured {
+    transform: scale(1.05);
+  }
+
+  .plan-title {
+    font-size: 1.2rem;
+  }
+
+  .plan-price {
+    font-size: 1.6rem;
+  }
+
+  .features-list {
+    font-size: 0.9rem;
+  }
+
+  .extras-button-wrapper {
+    margin-top: 2rem;
+  }
+
+  .extras-toggle-btn {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+}
