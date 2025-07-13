@@ -187,7 +187,11 @@
 @media (max-width: 768px) {
 
   .hero-section {
-    height: 100vh;
+    height: 90vh;
+  }
+
+  .arrows-container {
+    margin-bottom: 6.2rem;
   }
 
   .hero-h1 {
