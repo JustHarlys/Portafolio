@@ -92,6 +92,13 @@
   .hero-image-freelance {
     display: none;
   }
+
+  .hero-wrapper-freelance {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease all;
+  height: 90vh;
+}
 }
 
 @media (max-width: 768px) {
@@ -99,8 +106,8 @@
     flex-direction: column;
     justify-content: center;   /* Centra verticalmente */
     align-items: center;       /* Centra horizontalmente */
-    text-align: center;
-    height: 90vh;             /* Ocupa el alto total de la pantalla */
+    text-align: center;   
+    height: 90vh;         /* Ocupa el alto total de la pantalla */
   }
 
   .hero-content-freelance {
