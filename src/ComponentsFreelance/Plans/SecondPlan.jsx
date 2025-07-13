@@ -20,15 +20,12 @@ const additionalCosts = [
 ];
 
 const includedItems = [
-  "Desarrollo del sitio",
-  "Diseño personalizado desde 1 hasta 5 páginas",
-  "Hosting y dominio administrado incluido",
-  "Cambios ilimitados de todo tipo",
-  "Soporte técnico indefinido y constante",
-  "Optimización de rendimiento",
-  "SEO",
-  "Monitoreo constante de rendimiento y tráfico",
-  "Diseño para celulares y tablets",
+  "Lorem ipsum dolor sit amet.",
+  "Consectetur adipiscing elit.",
+  "Sed do eiusmod tempor.",
+  "Ut labore et.",
+  "Ullamco laboris nisi ut aliquip.",
+  "Ex ea commodo consequat.",
 ];
 
 const SecondPlan = () => {
@@ -42,7 +39,6 @@ const SecondPlan = () => {
       <div className="pricing-container">
        
 
-        {/* Tarjeta de Costos Adicionales */}
         <div className="price-card extras-card">
           <h2 className="plan-title">Costos Adicionales</h2>
           <ul className="features-list">
@@ -52,7 +48,7 @@ const SecondPlan = () => {
           </ul>
         </div>
 
-         {/* Tarjeta del Plan Mensual */}
+      
         <div className="price-card featured">
           <h2 className="plan-title">Plan Mensual</h2>
           <p className="plan-price">$150 / mes</p>
@@ -63,7 +59,9 @@ const SecondPlan = () => {
           </ul>
         </div>
 
-        {/* Tarjeta de Lo que Incluye */}
+
+         
+
         <div className="price-card extras-card">
           <h2 className="plan-title">Incluye este paquete</h2>
           <ul className="features-list">
@@ -72,6 +70,7 @@ const SecondPlan = () => {
             ))}
           </ul>
         </div>
+
       </div>
     </section>
   );

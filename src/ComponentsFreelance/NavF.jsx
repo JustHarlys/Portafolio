@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useContext } from 'react';
 import '../StylesFreelance/NavF.css';
 import { DarkContext } from '../Context/DarkToggleContext';
-import '../App.css'
 import {RouteContext} from '../Context/RouteContext';
 import logo from '../assets/Logo.PNG'
 
@@ -29,10 +28,10 @@ function NavF() {
 
 
   return (
-    <nav className='nav' style={ darkToggle ? {backgroundColor: '#282c34', color: 'white' } : {backgroundColor: 'white', color: '#282c34'} } >
+    <nav className={`nav glass ${darkToggle ? 'dark' : ''}`}>
       <div className="logo-cont">
         <img src={logo} alt="Harlys's Image" className='logo-img-freelance'/>
-        <h3 className="logo-name">H4 Solutions</h3>
+        <h3 className="logo-name" style={{ color: darkToggle ? 'white' : '#282c34'}}>H4 Solutions</h3>
       </div>
 
       {/* Lista de navegación */}

@@ -9,6 +9,7 @@ import "../StylesFreelance/Services.css";
 import { useContext } from "react";
 import { DarkContext } from "../Context/DarkToggleContext";
 
+
 const services = [
   { title: "Desarrollo a tu medida", icon: <MdOutlineDesignServices /> },
   { title: "Diseño Responsive y Optimización para Móviles", icon: <FiPenTool /> },
@@ -20,9 +21,11 @@ const services = [
 export const Services = () => {
 
     const { darkToggle } = useContext(DarkContext)
+    
 
   return (
-    <section className="services-section" style={{ backgroundColor: darkToggle ? 'rgb(38, 42, 51)' : '#fcfcfc' }}>
+    <section className="services-section" >
+      
       <h1 className="services-title" style={{ color: darkToggle ? 'white'  : '#282c34'}}>SERVICIOS</h1>
       <div className="services-grid">
         {services.map((item, index) => (

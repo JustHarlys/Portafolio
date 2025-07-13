@@ -62,3 +62,35 @@ body {
 #contact {
   transition: 0.5s ease all;
 }
+
+/* Contenedor del background interactivo */
+.interactive-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  transition: background 0.4s ease;
+}
+
+/* Tema claro */
+.interactive-gradient-bg.light {
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    #a18cd1,
+    #fbc2eb,
+    #ffffff
+  );
+}
+
+/* Tema oscuro */
+.interactive-gradient-bg.dark {
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    #0f0c29,
+    #302b63,
+    #24243e
+  );
+}

@@ -107,8 +107,12 @@
     margin-bottom: 2rem;
   }
 
+  .price-card:hover {
+    transform: none;
+  }
+
   .featured {
-    transform: scale(1.05);
+    transform: none;
   }
 
   .plan-title {

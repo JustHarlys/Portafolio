@@ -19,7 +19,7 @@ function ContactFormF() {
   };
 
   return (
-    <section id="contact" className="contact-section-f" style={{ backgroundColor: darkToggle ? '#282c34' : 'white',}}>
+    <section id="contact" className="contact-section-f">
       <h2 className="contact-title-f" style={darkToggle ? {color: 'white'} : {color: '#282c34'}}>Contáctame</h2>
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="text" name="from_name" placeholder="Tu nombre" required />

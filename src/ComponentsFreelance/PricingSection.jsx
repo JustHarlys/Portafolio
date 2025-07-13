@@ -42,7 +42,7 @@ export const PricingSection = () => {
 
   return (
 
-    <section className="slider-wrapper" style={{ backgroundColor: darkToggle ? '#282c34' : 'white',}}>
+    <section className="slider-wrapper">
         <h1 className="slider-heading" style={{ color: darkToggle ? 'white' : '#282c34',}}>Nuestros Planes</h1>
 
 

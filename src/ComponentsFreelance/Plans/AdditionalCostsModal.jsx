@@ -19,8 +19,24 @@ const AdditionalCostsModal = ({ onClose }) => {
   const overlayRef = useRef(null);
 
   useEffect(() => {
-    gsap.fromTo(modalRef.current, { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 });
-    gsap.fromTo(overlayRef.current, { opacity: 0 }, { opacity: 1, duration: 0.3 });
+    const isMobile = window.innerWidth <= 768;
+
+    if (!isMobile) {
+      // Solo animación GSAP para escritorio
+      gsap.fromTo(modalRef.current, { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 });
+      gsap.fromTo(overlayRef.current, { opacity: 0 }, { opacity: 1, duration: 0.3 });
+
+      const handleScroll = () => {
+        const rect = modalRef.current?.getBoundingClientRect();
+        if (!rect) return;
+
+        const isOutOfView = rect.bottom < 0 || rect.top > window.innerHeight;
+        if (isOutOfView) handleClose();
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
   }, []);
 
   const handleClose = () => {

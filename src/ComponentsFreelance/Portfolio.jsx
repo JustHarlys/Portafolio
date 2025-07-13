@@ -10,7 +10,6 @@ export const Portfolio = () => {
   return (
     <section
       className='gallery-container'
-      style={{ backgroundColor: darkToggle ? '#282c34' : 'white' }}
     >
       <h1
         className='gallery-h1'
