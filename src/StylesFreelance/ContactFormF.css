@@ -73,3 +73,7 @@
 .contact-form-f button:hover {
   background-color: darkblue;
 }
+
+textarea {
+  resize: none;
+}

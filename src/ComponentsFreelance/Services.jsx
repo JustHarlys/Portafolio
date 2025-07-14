@@ -8,7 +8,8 @@ import { MdOutlineDesignServices } from 'react-icons/md'
 import "../StylesFreelance/Services.css";
 import { useContext } from "react";
 import { DarkContext } from "../Context/DarkToggleContext";
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const services = [
   { title: "Desarrollo a tu medida", icon: <MdOutlineDesignServices /> },
@@ -21,10 +22,14 @@ const services = [
 export const Services = () => {
 
     const { darkToggle } = useContext(DarkContext)
+
+    // gsap.fromTo(".card-spotlight", { autoAlpha: 0, x: -1340 }, { autoAlpha: 1, duration: 20, x: 0, })
+
+    gsap.to(".card-spotlight", {})
     
 
-  return (
-    <section className="services-section" >
+    return (
+    <section className="services-section">
       
       <h1 className="services-title" style={{ color: darkToggle ? 'white'  : '#282c34'}}>SERVICIOS</h1>
       <div className="services-grid">

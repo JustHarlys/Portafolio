@@ -4,26 +4,39 @@ import { DarkContext } from '../Context/DarkToggleContext';
 import heroImg from '../assets/webenpc.svg';
 import {gsap} from 'gsap';
 import { useGSAP } from '@gsap/react';
+import {SplitText} from 'gsap/SplitText';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(SplitText);
+gsap.registerPlugin(ScrollTrigger)
 
 const HeroF = () => {
   const { darkToggle } = useContext(DarkContext);
 
-  gsap.registerPlugin(useGSAP);
   
   useGSAP(() => {
     let splitText = SplitText.create(".hero-p-freelance", { type: "lines"})
 
     const tl = gsap.timeline();
 
+
     tl.from(".hero-img-freelance", {
       y: -300,
       duration: 0.8,
       autoAlpha: 0
     }).from(".hero-h1-freelance", {
+        scrollTrigger: {
+        trigger: ".hero-h1-freelance",
+        toggleActions: "restart none none none"
+      },
       autoAlpha: 0,
       duration: 1,
       filter: "blur(5px)"
     },"<").from(splitText.lines, {
+        scrollTrigger: {
+        trigger: splitText.lines,
+        toggleActions: "restart none none none"
+      },
       mask: "words",
       duration: 1,
       ease: "expo.out",
@@ -40,7 +53,9 @@ const HeroF = () => {
       repeat: -1,
       yoyo: true,
       ease: 'sine.inOut'
-    }, "<")
+    }, "<");
+
+
   })
 
 
