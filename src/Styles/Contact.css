@@ -12,10 +12,22 @@
 }
 
 .contact-title {
-  font-size: 32px;
+  font-size: 37.70px;
   margin-bottom: 40px;
   color: var(--title);
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 9px;
+  background-color: var(--red);
+  margin: 25px auto 0;
+  border-radius: 40px;
 }
 
 .contact-form {

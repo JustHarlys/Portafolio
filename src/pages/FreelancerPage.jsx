@@ -32,17 +32,16 @@ export const FreelancerPage = () => {
 
 
   return (
-    <>
-     <div
-  className={`interactive-gradient-bg ${darkToggle ? 'dark' : 'light'}`}
-  ref={bgRef}
-/>
+
+    <div className={`freelancer-page ${darkToggle ? 'dark' : 'light'}`}>
+      <div className={`interactive-gradient-bg ${darkToggle ? 'dark' : 'light'}`} ref={bgRef} />
       <NavF />
       <HeroF />
       <Services />
       <Portfolio />
       <PricingSection />
       <ContactFormF />
-    </>
+    </div>
+    
   )
 }

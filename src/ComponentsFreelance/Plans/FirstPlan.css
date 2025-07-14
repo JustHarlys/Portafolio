@@ -78,11 +78,11 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .extras-toggle-btn:hover {
-  background-color: #007aff;
+  background-color: darkblue;
 }
 
 @media (max-width: 768px) {

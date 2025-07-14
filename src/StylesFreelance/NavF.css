@@ -95,6 +95,11 @@
 
 .mode-btn.freelance {
   background-color: rgb(57, 57, 168);
+  transition: 0.5s ease all;
+}
+
+.mode-btn.mode-btn.freelance:hover {
+  background-color: darkblue;
 }
 
 .mode-btn.dev {

@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+@property --color1 {
+  syntax: '<color>';
+  initial-value: #a18cd1;
+  inherits: false;
+}
+
+@property --color2 {
+  syntax: '<color>';
+  initial-value: #fbc2eb;
+  inherits: false;
+}
+
+@property --color3 {
+  syntax: '<color>';
+  initial-value: #ffffff;
+  inherits: false;
+}
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
@@ -72,25 +90,33 @@ body {
   height: 100vh;
   pointer-events: none;
   z-index: -1;
-  transition: background 0.4s ease;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
+  transition: --color1 0.5s ease, --color2 0.5s ease, --color3 0.5s ease;
 }
 
 /* Tema claro */
 .interactive-gradient-bg.light {
-  background: radial-gradient(
-    circle at var(--x, 50%) var(--y, 50%),
-    #a18cd1,
-    #fbc2eb,
-    #ffffff
-  );
+  --color1: #a18cd1;
+  --color2: #fbc2eb;
+  --color3: #ffffff;
 }
 
 /* Tema oscuro */
 .interactive-gradient-bg.dark {
-  background: radial-gradient(
-    circle at var(--x, 50%) var(--y, 50%),
-    #0f0c29,
-    #302b63,
-    #24243e
-  );
+  --color1: #0f0c29;
+  --color2: #302b63;
+  --color3: #24243e;
+}
+
+@media (max-width: 768px) {
+  .interactive-gradient-bg.dark {
+    --color1: #302b63;
+    --color2: #24243e;
+    --color3: #24243e;
+  }
 }

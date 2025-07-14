@@ -45,9 +45,8 @@ const HeroF = () => {
 
 
   return (
-    <div
-      className="hero-wrapper-freelance"
-    >
+  <div className={`hero-wrapper-freelance ${darkToggle ? 'dark' : 'light'}`}>
+
       <section className="hero-freelance">
         <div className="hero-content-freelance" style={{ color: darkToggle ? "#fff" : "#282c34"}}>
           <h1 className='hero-h1-freelance'>Impulsa tu negocio al siguiente nivel</h1>

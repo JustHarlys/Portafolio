@@ -2,6 +2,7 @@
   --red: rgb(145, 36, 36);
   --text: rgb(85, 85, 85);
   --title: rgb(17, 17, 17);
+  --blue: rgb(57, 57, 168);
 }
 
 /* Contact */
@@ -11,13 +12,25 @@
 }
 
 .contact-title-f {
-  font-size: 32px;
+  font-size: 37.70px;
   margin-bottom: 40px;
   color: var(--title);
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-.contact-form {
+.contact-title-f::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 9px;
+  background-color: var(--blue);
+  margin: 25px auto 0;
+  border-radius: 40px;
+}
+
+.contact-form-f {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -29,8 +42,8 @@
   resize: none;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form-f input,
+.contact-form-f textarea {
   padding: 12px 16px;
   border: 2px solid #ddd;
   border-radius: 5px;
@@ -39,14 +52,14 @@
   transition: border-color 0.3s ease;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--red);
+.contact-form-f input:focus,
+.contact-form-f textarea:focus {
+  border-color: var(--blue);
   outline: none;
 }
 
-.contact-form button {
-  background-color: var(--red);
+.contact-form-f button {
+  background-color: var(--blue);
   color: white;
   border: none;
   padding: 14px;
@@ -54,9 +67,9 @@
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
-.contact-form button:hover {
-  background-color: darkred;
+.contact-form-f button:hover {
+  background-color: darkblue;
 }
