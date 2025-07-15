@@ -123,10 +123,15 @@
   border-radius: 5px;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
   .nav {
     padding: 15px;
+
   }
   .nav-items {
     flex-direction: column;
@@ -158,5 +163,21 @@
 
   .hamburger {
     display: flex;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .icon-container-dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 15px;
+  }
+
+  .desktop {
+    display: none;
   }
 }

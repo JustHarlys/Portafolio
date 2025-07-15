@@ -88,7 +88,7 @@ function NavF() {
           {mode ? 'Freelance' : 'Dev'}
         </button>
 
-        <div className="icon-container-freelance">
+        <div className="icon-container-freelance desktop">
           <i
             className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`}
             onClick={handleToggle}
@@ -98,10 +98,17 @@ function NavF() {
       </ul>
 
       {/* Icono de hamburguesa */}
+      <div className="icon-container-freelance mobile">
+          <i
+            className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`}
+            onClick={handleToggle}
+            style={darkToggle ? { color: 'white' } : { color: 'black' }}
+          ></i>
       <div className="hamburger" onClick={toggleMenu}>
         <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
         <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
         <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
+      </div>
       </div>
     </nav>
   );

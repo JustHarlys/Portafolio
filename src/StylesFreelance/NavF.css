@@ -179,4 +179,16 @@
     display: flex;
   }
 
+  .icon-container-freelance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 15px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
 }

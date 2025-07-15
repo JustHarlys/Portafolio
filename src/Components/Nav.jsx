@@ -54,18 +54,21 @@ function Nav() {
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contáctame</li></a>
         <button onClick={ handleModeToggle } className={`mode-btn ${mode ? 'freelance ' : 'dev'}`}> {mode ? 'Freelance' : 'Dev'} </button>
 
-        <div className='icon-container-dev'>
+        <div className={`icon-container-dev desktop`}>
           <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
         </div>
 
       </ul>
 
       {/* Icono de hamburguesa */}
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
-        <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
-        <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
-      </div>
+        <div className={`icon-container-dev mobile`}>
+            <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
+          <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
+          <div className="bar" style={{backgroundColor: darkToggle ? 'white' : 'black'}}></div>
+        </div>
+        </div>
     </nav>
   );
 }

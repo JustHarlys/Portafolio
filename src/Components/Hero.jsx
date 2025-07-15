@@ -18,9 +18,9 @@ function Hero() {
     const tl = gsap.timeline()
 
     tl.from(splitText.chars, {
-      duration: .5,
+      duration: 0.2,
       autoAlpha: 0,
-      stagger: 0.06,
+      stagger: 0.07,
       y: 20,
       filter: "blur(5px)"
     }).from(splitText2.words, {
