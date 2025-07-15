@@ -4,14 +4,35 @@ import AdditionalCostsModal from './AdditionalCostsModal';
 import { useState, useContext } from 'react';
 import { DarkContext } from '../../Context/DarkToggleContext';
 
+const hundredFifty = [
+  "1 página incluida",
+  "Diseño adaptado a móviles",
+  "SEO básico optimizado",
+  "Diseño visual personalizado",
+  "Integración con redes sociales",
+  "Formulario de contacto funcional",
+  "7 días de soporte post-entrega"
+];
 
-const features = [
-  "Lorem ipsum dolor sit amet.",
-  "Consectetur adipiscing elit.",
-  "Sed do eiusmod tempor.",
-  "Ut labore et.",
-  "Ullamco laboris nisi ut aliquip.",
-  "Ex ea commodo consequat.",
+const threeHundred = [
+  "3 páginas incluidas",
+  "Diseño adaptado a móviles",
+  "SEO básico optimizado",
+  "Diseño visual personalizado",
+  "Integración con redes sociales",
+  "Formulario de contacto funcional",
+  "14 días de soporte post-entrega",
+];
+
+const fiveHundred = [
+  "5 páginas incluidas",
+  "Diseño adaptado a móviles",
+  "SEO avanzado optimizado",
+  "Diseño visual personalizado",
+  "Integración con redes sociales",
+  "Formulario de contacto funcional",
+  "21 días de soporte post-entrega",
+  "1 mes de cambios gratis"
 ];
 
 const FirstPlan = () => {
@@ -27,10 +48,10 @@ const FirstPlan = () => {
       <div className="pricing-container">
         {/* Plan $150 */}
         <div className="price-card">
-          <h2 className="plan-title">Plan Básico</h2>
+          <h2 className="plan-title">Sitio Simple</h2>
           <p className="plan-price">$150</p>
           <ul className="features-list">
-            {features.map((text, i) => (
+            {hundredFifty.map((text, i) => (
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>
@@ -38,10 +59,10 @@ const FirstPlan = () => {
 
         {/* Plan $500 (destacado) */}
         <div className="price-card featured" id="featured-card">
-          <h2 className="plan-title">Plan Avanzado</h2>
+          <h2 className="plan-title">Sitio Web Completo</h2>
           <p className="plan-price">$500</p>
           <ul className="features-list">
-            {features.map((text, i) => (
+            {fiveHundred.map((text, i) => (
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>
@@ -49,10 +70,10 @@ const FirstPlan = () => {
 
         {/* Plan $300 */}
         <div className="price-card">
-          <h2 className="plan-title">Plan Intermedio</h2>
+          <h2 className="plan-title">Sitio Web básico</h2>
           <p className="plan-price">$300</p>
           <ul className="features-list">
-            {features.map((text, i) => (
+            {threeHundred.map((text, i) => (
               <li key={i}><FaCheck style={{ marginRight: 10 }} /> {text}</li>
             ))}
           </ul>

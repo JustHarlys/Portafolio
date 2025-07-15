@@ -9,7 +9,6 @@ const additionalCosts = [
   "Soporte - Mantenimiento USD $50 x mes",
   "Página adicional - USD $100 x página",
   "Blog editable por cliente - USD $300",
-  "Diseño para celulares y tablets - 30% del pago total",
   "Chatbot en página - USD $200",
   "Rediseño de página o secciones - USD $30 x hora"
 ];

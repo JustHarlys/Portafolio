@@ -49,8 +49,8 @@ function Nav() {
       <ul ref={menuRef} className={`nav-items ${isOpen ? 'open' : ''} ${darkToggle ? 'open-black' : ''}`} >
         <a href="#home" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Inicio</li></a>
         <a href="#about" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Sobre Mi</li></a>
-        <a href="#education" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Educación</li></a>
         <a href="#projects" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Proyectos</li></a>
+        <a href="#education" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Educación</li></a>
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contáctame</li></a>
         <button onClick={ handleModeToggle } className={`mode-btn ${mode ? 'freelance ' : 'dev'}`}> {mode ? 'Freelance' : 'Dev'} </button>
 

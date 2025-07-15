@@ -65,10 +65,10 @@ const HeroF = () => {
       <section className="hero-freelance">
         <div className="hero-content-freelance" style={{ color: darkToggle ? "#fff" : "#282c34"}}>
           <h1 className='hero-h1-freelance'>Impulsa tu negocio al siguiente nivel</h1>
-          <p className='hero-p-freelance' style={{ color: darkToggle ? "#fff" : "#282c34"}}>Conecta con más clientes, automatiza procesos y crece con tecnología moderna.</p>
+          <p className='hero-p-freelance' style={{ color: darkToggle ? "#fff" : "#282c34"}}>Haz que cada visita cuente. Diseño profesional, velocidad, posicionamiento y todo lo necesario para que tu negocio crezca en línea.</p>
           <div className="hero-buttons-freelance">
-            <button className="primary-btn-freelance btn-freelance">Empezar ahora</button>
-            <button className="secondary-btn-freelance btn-freelance">Saber más</button>
+            <button className="primary-btn-freelance btn-freelance">Portafolio</button>
+            <button className="secondary-btn-freelance btn-freelance">Pide tu cotización</button>
           </div>
         </div>
 

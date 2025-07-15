@@ -9,8 +9,8 @@
 .slider-viewport {
   position: relative;
   width: 100%;
-  min-height: 400px; /* Asegura altura estable */
   overflow: hidden;
+  height: 100vh;
 }
 
 

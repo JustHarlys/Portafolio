@@ -5,12 +5,12 @@ import { DarkContext } from '../../Context/DarkToggleContext';
 import { useContext } from 'react';
 
 const features = [
-  "Lorem ipsum dolor sit amet.",
-  "Consectetur adipiscing elit.",
-  "Sed do eiusmod tempor incididunt.",
-  "Ut labore et dolore magna aliqua.",
-  "Ullamco laboris nisi ut aliquip.",
-  "Ex ea commodo consequat.",
+  "1 a 5 páginas incluidas",
+  "Diseño adaptado a móviles",
+  "SEO avanzado optimizado",
+  "Diseño visual personalizado",
+  "Integración con redes sociales",
+  "Formulario de contacto funcional"
 ];
 
 const additionalCosts = [
@@ -20,12 +20,13 @@ const additionalCosts = [
 ];
 
 const includedItems = [
-  "Lorem ipsum dolor sit amet.",
-  "Consectetur adipiscing elit.",
-  "Sed do eiusmod tempor.",
-  "Ut labore et.",
-  "Ullamco laboris nisi ut aliquip.",
-  "Ex ea commodo consequat.",
+  "Desarrollo total del sitio",
+  "Hosting y dominio incluido",
+  "Cambios ilimitados",
+  "Soporte técnico indefinido",
+  "Optimización de rendimiento",
+  "Monitoreo constante de tráfico",
+  "No se paga nada al principio",
 ];
 
 const SecondPlan = () => {

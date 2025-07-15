@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fi';
 import { MdOutlineDesignServices } from 'react-icons/md'
 import "../StylesFreelance/Services.css";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DarkContext } from "../Context/DarkToggleContext";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -24,14 +24,26 @@ export const Services = () => {
     const { darkToggle } = useContext(DarkContext)
     gsap.registerPlugin(ScrollTrigger)
 
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.fromTo(".card-spotlight",
-      { x : -1000, autoAlpha: 0, rotate: 0 }, 
-      { x : 0, autoAlpha: 1, rotate: 360, duration: 0.5, stagger: { each: 1 }, ease: "circ.out", 
-      scrollTrigger: {
-        trigger: ".services-section",
-        end: "center center",
-        scrub: true,
-      }})
+      { x: -1000, autoAlpha: 0, rotate: 0 },
+      {
+        x: 0, autoAlpha: 1, rotate: 360,
+        duration: 0.5,
+        stagger: { each: 1 },
+        ease: "circ.out",
+        scrollTrigger: {
+          trigger: ".services-section",
+          start: "top bottom", // cambia según tu necesidad
+          end: "center center",
+          scrub: true,
+        }
+      });
+  }, []); 
+
     
 
     return (
