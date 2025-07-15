@@ -22,10 +22,16 @@ const services = [
 export const Services = () => {
 
     const { darkToggle } = useContext(DarkContext)
+    gsap.registerPlugin(ScrollTrigger)
 
-    // gsap.fromTo(".card-spotlight", { autoAlpha: 0, x: -1340 }, { autoAlpha: 1, duration: 20, x: 0, })
-
-    gsap.to(".card-spotlight", {})
+    gsap.fromTo(".card-spotlight",
+      { x : -1000, autoAlpha: 0, rotate: 0 }, 
+      { x : 0, autoAlpha: 1, rotate: 360, duration: 0.5, stagger: { each: 1 }, ease: "circ.out", 
+      scrollTrigger: {
+        trigger: ".services-section",
+        end: "center center",
+        scrub: true,
+      }})
     
 
     return (
