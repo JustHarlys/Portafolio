@@ -194,13 +194,13 @@
     height: 90vh;
   }
   
-  .hero-h1 {
-    font-size: 1.375rem;   /* Ajusta el tamaño para pantallas pequeñas */
-  }
-
   .hero-p {
     font-size: 18px;
     padding: 5px;
+  }
+
+  .hero-h1 {
+    font-size: 1.375rem;   /* Ajusta el tamaño para pantallas pequeñas */
   }
 
   .hero-btn {
