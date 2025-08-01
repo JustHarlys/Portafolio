@@ -3,15 +3,10 @@ import me from '../assets/me.jfif';
 import '../Styles/Nav.css';
 import { DarkContext } from '../Context/DarkToggleContext';
 import '../App.css'
-import {RouteContext} from '../Context/RouteContext';
-import { useNavigate } from 'react-router-dom';
 
 function Nav() {
   
   const {handleToggle, darkToggle} = useContext(DarkContext)
-  const { mode, onToggleMode } = useContext(RouteContext)
-  const navigate = useNavigate();
-
 
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef();
@@ -30,14 +25,6 @@ function Nav() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-    const handleModeToggle = () => {
-      const newMode = !mode;
-      onToggleMode();
-      navigate(newMode ? '/freelance' : '/dev');
-    };
-
-
-
   return (
     <nav className='nav' style={ darkToggle ? {backgroundColor: '#282c34', color: 'white' } : {backgroundColor: 'white', color: '#282c34'} } >
       <div className="logo-cont">
@@ -52,7 +39,6 @@ function Nav() {
         <a href="#education" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Educación</li></a>
         <a href="#projects" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Proyectos</li></a>
         <a href="#contact" onClick={() => setIsOpen(false)} style={darkToggle ? {color: 'white'} : {color: '#282c34'}}><li className="nav-item">Contáctame</li></a>
-        <button onClick={ handleModeToggle } className={`mode-btn ${mode ? 'freelance ' : 'dev'}`}> {mode ? 'Freelance' : 'Dev'} </button>
 
         <div className={`icon-container-dev desktop`}>
           <i className={`fa-solid ${darkToggle ? 'fa-sun' : 'fa-moon'} nav-item toggle`} onClick={handleToggle} style={darkToggle ? {color: 'white'} : {color: 'black'}}></i>
