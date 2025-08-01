@@ -23,8 +23,8 @@ function DevPage() {
       <Nav />
       <section id='home'><Hero /></section>
       <section id='about' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><AboutMe /></section>
-      <section id='education'><Education /> </section>
       <section id='projects' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><Projects/></section>
+      <section id='education'><Education /> </section>
       <Sidebar />
       <section id='contact' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><ContactForm /></section>
     </>

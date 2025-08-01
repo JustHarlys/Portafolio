@@ -88,6 +88,11 @@
 
 .mode-btn.dev {
   background-color: var(--red);
+  transition: 0.5s ease background-color;
+}
+
+.mode-btn.dev:hover {
+  background-color: darkred;
 }
 
 @keyframes logo-spin {
