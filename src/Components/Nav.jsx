@@ -8,7 +8,6 @@ function Nav() {
   
   const {handleToggle, darkToggle} = useContext(DarkContext)
 
-
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef();
 
@@ -25,7 +24,6 @@ function Nav() {
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
 
   return (
     <nav className='nav' style={ darkToggle ? {backgroundColor: '#282c34', color: 'white' } : {backgroundColor: 'white', color: '#282c34'} } >
