@@ -28,22 +28,20 @@ export default [
 
     },
     {
-        title: "Bakery Template",
-        link: "https://bakery-template-plum.vercel.app/",
-        linkRes: "https://bakery-template-plum.vercel.app/",
-        concept: "Template de una pastelería",
-        img: bakeryTemplate,
-        github: "https://github.com/JustHarlys/Bakery-Template",
-        description: "Modelo de una página web para fines de una repostería o pastelería, diseño responsivo y un modo oscuro y claro. Desarrollado en React.js y desplegado en vercel."
+        title: "Consulta De Trabajo",
+        link: "https://consultadetrabajord.com/",
+        linkRes: "https://consultadetrabajord.com/",
+        concept: "Especialistas en Derecho Laboral y Consultas de Seguridad Social.",
+        img: '/images/cdt.png',
+        description: "Diseñé un sitio web informativo para un equipo de abogados especializados en derecho laboral. El objetivo fue presentar sus servicios legales de forma clara, accesible y confiable, con diseño adaptable para todos los dispositivos."
     },
     {
-        title: "Accounting Template",
-        link: "https://accounting-template.vercel.app/",
-        linkRes: "https://accounting-template.vercel.app/",
-        concept: "Template de una firma de contadores",
-        img: accountingTemplate,
-        github: "https://github.com/JustHarlys/Accounting-Template",
-        description: "Plantilla de sitio web orientada a una firma contadora, con diseño moderno. Construida con React.js y desplegada en Vercel."
+        title: "Guerra De Clanes",
+        link: "https://guerradeclanes.org/",
+        linkRes: "https://guerradeclanes.org/",
+        concept: "Torneo de eSports en el juego móvil Free Fire",
+        img: '/images/GDC.png',
+        description: "Diseñé y desarrollé esta página web para la comunidad de Guerra De Clanes competitiva de Free Fire en Latinoamérica, ofreciendo una plataforma informativa sobre puntajes totales, fechas, equipos participantes y jugadores participantes."
     },
     {
         title: "Astronomy Picture of the Day",
@@ -55,13 +53,12 @@ export default [
         description: "Página que muestra la foto astronomica del día elegida por la nasa, utilizando su API y haciendo un llamado a la misma, desarrollado en React y desplegado en vercel."
     },
     {
-        title: "Weight Tracker",
-        link : "",
-        linkRes : "",
-        concept : "Web App para llevar un registro de peso corporal",
-        img: weightTrackerImg,
-        github : "https://github.com/JustHarlys/Weight-Tracker",
-        description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos en una base de datos creada en SQL Server'
+        title: "Core HR",
+        link : "https://core-hr.vercel.app/",
+        linkRes : "https://core-hr.vercel.app/",
+        concept : "Firma especializada en la gestión estratégica del talento humano.",
+        img: '/images/core-hr.png',
+        description: "Desarrollé una página institucional moderna para Core HR, destacando sus servicios de reclutamiento, capacitación y consultoría. El sitio transmite confianza, profesionalismo y está optimizado para verse bien en cualquier dispositivo."
     },
     {
         title : "Let it Out (Despliegue de base de datos caducado)",

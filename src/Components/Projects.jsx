@@ -31,10 +31,16 @@ const Projects = () => {
             <h3 style={darkToggle ? {color: 'white'} : {}}>{project.title}</h3>
             <p className="concept">{project.concept}</p>
             <p className="description" style={darkToggle ? {color: 'white'} : {}}>{project.description}</p>
+              
+                              
             <div className="project-links">
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="link-button">
+              {
+                project.github &&(
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="link-button">
                 <i className="fab fa-github"></i> GitHub
-              </a>
+                </a>
+                )
+                }
               {project.link && (
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="link-button">
                   <i className="fas fa-globe"></i> Website
