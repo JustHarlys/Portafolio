@@ -45,9 +45,15 @@ export default [
         category: "Programming Language",
     },
     {
-        course: "C Sharp",
-        logo: null,
-        svg: "https://img.icons8.com/ios-filled/50/c-sharp-logo.png",
+        course: "PHP",
+        logo: "fa-brands fa-php",
+        svg: null,
+        category: "Programming Language",
+    },
+    {
+        course: "Laravel",
+        logo: "fab fa-laravel",
+        svg: null,
         category: "Programming Language",
     },
     {

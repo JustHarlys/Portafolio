@@ -1,10 +1,5 @@
-import letItOutImg from '/src/assets/let-it-out.webp';
-import weightTrackerImg from '/src/assets/weight-tracker.webp';
-import personalBlog from '/src/assets/personal-blog.webp'
 import apod from '/src/assets/apod.webp'
-import bakeryTemplate from '/src/assets/bakery-template.webp'
 import mlbSimulator from '/src/assets/mlb-simulator.webp'
-import accountingTemplate from '/src/assets/accounting.webp'
 import pagosUnapec from '/src/assets/Pagos UNAPEC.png'
 
 export default [
@@ -59,23 +54,5 @@ export default [
         concept : "Firma especializada en la gestión estratégica del talento humano.",
         img: '/images/core-hr.png',
         description: "Desarrollé una página institucional moderna para Core HR, destacando sus servicios de reclutamiento, capacitación y consultoría. El sitio transmite confianza, profesionalismo y está optimizado para verse bien en cualquier dispositivo."
-    },
-    {
-        title : "Let it Out (Despliegue de base de datos caducado)",
-        link : "https://letitout.vercel.app/",
-        linkRes : "https://letitout.vercel.app/",
-        concept : "Una simple página anónima que funciona para dejar experiencias y comentarios sin que nadie sepa tu identidad",
-        img : letItOutImg,
-        github : "https://github.com/JustHarlys/Let-It-Out",
-        description : 'Está desarrollado en JavaScript utilizando los framework de React.js, Node.js, Express.js y la base de datos en mongodb, su despliegue fue hecho en Vercel para el front-end y el back-end fue desplegado en Railway, contiene como accesibilidad el cambio de fondo de pantalla de blanco a negro y viceversa'
-    },
-    {
-        title: "Personal Blog (Despliegue de base de datos caducado)",
-        link: "https://harlys-blog.vercel.app/",
-        linkRes: "https://harlys-blog.vercel.app/",
-        concept: "Blog personal para publicaciones",
-        img: personalBlog,
-        github: "https://github.com/JustHarlys/Blog",
-        description: "Pagina de blog creada para almacenar entradas customizadas con cara a leer mis experiencias en diferentes categorias preseleccionadas, desarrollada en JavaScript utilizando React.js y Node.js, con base de datos en MongoDB, desplegada en Vercel para el frontend y Railway para el backend"
     }
 ];
