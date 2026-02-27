@@ -46,7 +46,7 @@ export default [
     },
     {
         course: "PHP",
-        logo: "fa-brands fa-php",
+        logo: "fab fa-php",
         svg: null,
         category: "Programming Language",
     },
