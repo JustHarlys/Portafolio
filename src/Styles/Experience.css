@@ -1,0 +1,104 @@
+.experience-section {
+  padding: 80px 10%;
+  transition: background-color 0.3s ease;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.experience-header h2 {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: darkred;
+}
+
+.experience-date {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-description {
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.experience-skills span {
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-color: darkred;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.experience-responsibilities {
+  padding-left: 20px;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.experience-responsibilities li {
+  margin-bottom: 8px;
+}
+
+.experience-confidentiality {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 20px;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-container {
+    padding: 25px 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-date {
+    white-space: normal;
+  }
+}

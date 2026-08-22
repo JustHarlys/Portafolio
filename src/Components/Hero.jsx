@@ -1,10 +1,9 @@
 import '../Styles/Hero.css'
 import '../App.css'
 import { DarkContext } from '../Context/DarkToggleContext'
-import { useContext} from 'react'
-import {gsap} from 'gsap'
+import { useContext } from 'react'
+import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
-
 
 function Hero() {
   const { darkToggle } = useContext(DarkContext)
@@ -42,17 +41,30 @@ function Hero() {
 
   return (
     <section className={`hero-section ${darkToggle ? 'hero-black' : ''}`}>
-
-
       <div className="hero-content">
-        <h1 className="hero-h1" style={{color: darkToggle ? 'white' : 'black'}}>Hola, soy Harlys Almanzar</h1>
+
+        <h1
+          className="hero-h1"
+          style={{ color: darkToggle ? 'white' : 'black' }}
+        >
+          Hi, I'm Harlys Almanzar
+        </h1>
 
         <div className="hero-text">
-          <p className="hero-p" style={darkToggle ? {color: 'white'} : {}}>Transformo ideas en experiencias digitales sólidas, diseñando y desarrollando sitios web que aportan valor real al crecimiento de cada proyecto.</p>
+          <p
+            className="hero-p"
+            style={darkToggle ? { color: 'white' } : {}}
+          >
+            Software Engineer and Full-Stack Developer focused on building
+            reliable, scalable, and user-centered applications that solve
+            real-world problems.
+          </p>
         </div>
 
         <div className="hero-btn">
-          <a href="#projects" className="btn">Proyectos</a>
+          <a href="#projects" className="btn">
+            View Projects
+          </a>
         </div>
       </div>
 
@@ -61,7 +73,6 @@ function Hero() {
         <div className={darkToggle ? 'chevron-white' : 'chevron'}></div>
         <div className={darkToggle ? 'chevron-white' : 'chevron'}></div>
       </div>
-
     </section>
   )
 }

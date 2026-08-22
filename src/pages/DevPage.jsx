@@ -7,6 +7,7 @@ import Sidebar from '../Components/Sidebar.jsx'
 import ContactForm from '../Components/ContactForm.jsx'
 import { useContext, useEffect } from 'react'
 import { DarkContext } from '../Context/DarkToggleContext.jsx'
+import Experience from '../Components/Experience.jsx'
 
 
 function DevPage() {
@@ -24,6 +25,7 @@ function DevPage() {
       <section id='home'><Hero /></section>
       <section id='about' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><AboutMe /></section>
       <section id='projects' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><Projects/></section>
+      <section id='experience' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><Experience /></section>
       <section id='education'><Education /> </section>
       <Sidebar />
       <section id='contact' style={{backgroundColor: darkToggle ? '#282c34' : '#fff'}}><ContactForm /></section>

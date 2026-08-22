@@ -1,33 +1,33 @@
 const educationData = [
   {
-    title: "Certificación Desarrollo Web",
+    title: "Web Development Certification",
     institution: "CENTU",
     date: "2018",
-    description: "Curso de desarrollo HTML, CSS y JavaScript"
+    description: "Web development fundamentals using HTML, CSS, and JavaScript."
   },
   {
-    title: "Ingeniería de Software",
+    title: "Bachelor's Degree in Software Engineering",
     institution: "Universidad APEC",
-    date: "2020 - Actualidad",
-    description: 'Título de grado en Ingeniería de Software'
+    date: "2020 - 2026",
+    description: "Bachelor's degree in Software Engineering."
   },
   {
-    title: "Diplomado SQL Server",
+    title: "SQL Server Diploma",
     institution: "ITLA",
     date: "2024",
-    description: "Diplomado de manejo de bases de datos SQL Server de nivel básico"
+    description: "Database management and development using Microsoft SQL Server."
   },
   {
-    title: "Diplomado C# .NET Intermedio",
+    title: "Intermediate C# .NET Diploma",
     institution: "ITLA",
     date: "2024",
-    description: "Desarrollo de aplicaciones con C# y el Framework .NET de nivel intermedio"
+    description: "Intermediate application development using C# and the .NET framework."
   },
   {
-    title: "Diplomado C# .NET Avanzado",
+    title: "Advanced C# .NET Diploma",
     institution: "ITLA",
     date: "2025",
-    description: "Desarrollo de aplicaciones con C# y el Framework .NET de nivel avanzado"
+    description: "Advanced application development using C# and the .NET framework."
   }
 ];
 
