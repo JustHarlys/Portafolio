@@ -11,7 +11,7 @@
 
 .experience-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -36,9 +36,22 @@
   color: darkred;
 }
 
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  text-align: right;
+}
+
 .experience-date {
   font-size: 0.95rem;
-  white-space: nowrap;
+  font-weight: 600;
+}
+
+.experience-location {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .experience-description {
@@ -50,7 +63,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 25px 0;
+  margin: 25px 0 35px;
 }
 
 .experience-skills span {
@@ -62,23 +75,43 @@
   font-weight: 500;
 }
 
-.experience-responsibilities {
-  padding-left: 20px;
-  line-height: 1.8;
-  margin-top: 25px;
+.experience-systems {
+  margin-top: 30px;
 }
 
-.experience-responsibilities li {
-  margin-bottom: 8px;
+.experience-systems-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.experience-system {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.experience-system:last-child {
+  border-bottom: none;
+}
+
+.experience-system h4 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: darkred;
+}
+
+.experience-system p {
+  margin: 0;
+  line-height: 1.7;
 }
 
 .experience-confidentiality {
-  margin-top: 25px;
+  margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid rgba(128, 128, 128, 0.25);
   font-size: 0.85rem;
   font-style: italic;
   line-height: 1.6;
+  opacity: 0.85;
 }
 
 @media (max-width: 768px) {
@@ -88,17 +121,29 @@
 
   .experience-title {
     font-size: 2rem;
+    margin-bottom: 35px;
   }
 
   .experience-container {
     padding: 25px 20px;
+    margin-bottom: 30px;
   }
 
   .experience-header {
     flex-direction: column;
+    gap: 12px;
   }
 
-  .experience-date {
-    white-space: normal;
+  .experience-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .experience-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .experience-skills {
+    margin-bottom: 25px;
   }
 }

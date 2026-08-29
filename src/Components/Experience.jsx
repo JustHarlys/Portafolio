@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useContext } from 'react';
 import { DarkContext } from '../Context/DarkToggleContext';
+import experienceData from '../data/experience';
 import '../Styles/Experience.css';
 import '../App.css';
 
@@ -25,81 +26,97 @@ function Experience() {
         Professional Experience
       </h1>
 
-      <motion.div
-        className="experience-container"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-      >
-        <div className="experience-header">
-          <div>
-            <h2 style={darkToggle ? { color: 'white' } : {}}>
-              Software Developer
-            </h2>
+      {experienceData.map((experience, index) => (
+        <motion.div
+          className="experience-container"
+          key={`${experience.company}-${experience.position}`}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.6,
+            ease: 'easeOut',
+            delay: index * 0.1
+          }}
+        >
+          <div className="experience-header">
+            <div>
+              <h2 style={darkToggle ? { color: 'white' } : {}}>
+                {experience.position}
+              </h2>
 
-            <h3>Senate of the Dominican Republic</h3>
+              <h3>{experience.company}</h3>
+            </div>
+
+            <div className="experience-meta">
+              <span
+                className="experience-date"
+                style={darkToggle ? { color: '#ddd' } : {}}
+              >
+                {experience.date}
+              </span>
+
+              <span
+                className="experience-location"
+                style={darkToggle ? { color: '#ddd' } : {}}
+              >
+                {experience.location}
+              </span>
+            </div>
           </div>
 
-          <span
-            className="experience-date"
-            style={darkToggle ? { color: '#ddd' } : {}}
-          >
-            Santo Domingo, Dominican Republic
-          </span>
-        </div>
+          {experience.description.map((paragraph, paragraphIndex) => (
+            <p
+              key={paragraphIndex}
+              className="experience-description"
+              style={darkToggle ? { color: 'white' } : {}}
+            >
+              {paragraph}
+            </p>
+          ))}
 
-        <p
-          className="experience-description"
-          style={darkToggle ? { color: 'white' } : {}}
-        >
-          Develop and maintain internal web applications that support
-          institutional and administrative processes. My work spans full-stack
-          development, database management, real-time functionality, reporting,
-          system integration, and production support.
-        </p>
+          <div className="experience-skills">
+            {experience.technologies.map((technology) => (
+              <span key={technology}>
+                {technology}
+              </span>
+            ))}
+          </div>
 
-        <p
-          className="experience-description"
-          style={darkToggle ? { color: 'white' } : {}}
-        >
-          I contribute to the development and continuous improvement of
-          business-critical systems, working on both new features and existing
-          production applications while focusing on reliability,
-          maintainability, and usability.
-        </p>
+          {experience.systems?.length > 0 && (
+            <div className="experience-systems">
+              <h3
+                className="experience-systems-title"
+                style={darkToggle ? { color: 'white' } : {}}
+              >
+                Selected Systems
+              </h3>
 
-        <div className="experience-skills">
-          <span>Laravel</span>
-          <span>Livewire</span>
-          <span>PHP</span>
-          <span>JavaScript</span>
-          <span>SQL Server</span>
-          <span>Bootstrap</span>
-          <span>Real-Time Systems</span>
-          <span>Git</span>
-        </div>
+              {experience.systems.map((system) => (
+                <div
+                  className="experience-system"
+                  key={system.title}
+                >
+                  <h4>{system.title}</h4>
 
-        <ul
-          className="experience-responsibilities"
-          style={darkToggle ? { color: 'white' } : {}}
-        >
-          <li>Full-stack development of internal business applications</li>
-          <li>Real-time features and event-driven workflows</li>
-          <li>SQL Server database development and data management</li>
-          <li>Automated reporting and document generation</li>
-          <li>Production troubleshooting, maintenance, and optimization</li>
-          <li>Role-based access control and business workflow implementation</li>
-        </ul>
+                  <p style={darkToggle ? { color: 'white' } : {}}>
+                    {system.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
 
-        <p
-          className="experience-confidentiality"
-          style={darkToggle ? { color: '#ccc' } : {}}
-        >
-          Due to the internal nature of these systems, source code and
-          application previews are not publicly available.
-        </p>
-      </motion.div>
+          {experience.confidentiality && (
+            <p
+              className="experience-confidentiality"
+              style={darkToggle ? { color: '#ccc' } : {}}
+            >
+              {experience.confidentiality}
+            </p>
+          )}
+        </motion.div>
+      ))}
     </section>
   );
 }
